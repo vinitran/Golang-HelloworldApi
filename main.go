@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Sprintln("Opened api in 127.0.0.1:8080/")
+	fmt.Println("Opened api in 127.0.0.1:8080/")
 	http.HandleFunc("/", HelloServer)
 	http.ListenAndServe(":8080", nil)
 }
